@@ -13,6 +13,24 @@
     <name>Alfresco greenmail implementation</name>
     <description>Alfresco's patched greenmail implementation</description>
 
+    <scm>
+        <connection>scm:git:https://github.com/Alfresco/alfresco-greenmail.git</connection>
+        <developerConnection>scm:git:https://github.com/Alfresco/alfresco-greenmail.git</developerConnection>
+        <url>https://github.com/Alfresco/alfresco-greenmail</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>alfresco-internal</id>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>alfresco-internal-snapshots</id>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>com.sun.mail</groupId>
