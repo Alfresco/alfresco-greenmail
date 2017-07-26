@@ -14,8 +14,8 @@
     <description>Alfresco's patched greenmail implementation</description>
 
     <scm>
-        <connection>scm:git:https://github.com/Alfresco/alfresco-greenmail.git</connection>
-        <developerConnection>scm:git:https://github.com/Alfresco/alfresco-greenmail.git</developerConnection>
+        <connection>scm:git:git@github.com:Alfresco/alfresco-greenmail.git</connection>
+        <developerConnection>scm:git:git@github.com:Alfresco/alfresco-greenmail.git</developerConnection>
         <url>https://github.com/Alfresco/alfresco-greenmail</url>
         <tag>HEAD</tag>
     </scm>
