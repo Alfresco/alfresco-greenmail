@@ -130,7 +130,7 @@ class SearchCommand extends SelectedStateCommand implements UidEnabledCommand {
             trimFirstSpace(request);
             char next = request.nextChar();
 
-            while (next != '\n')
+            while (next != '\r' && next != '\n')
             {
                 searchTerm = extractSearchTerm(request);
                 resultTerm = (resultTerm == null ? searchTerm : new AndTerm(resultTerm, searchTerm));
@@ -160,7 +160,7 @@ class SearchCommand extends SelectedStateCommand implements UidEnabledCommand {
             }
             else
             {
-                while (next != ' ' && next != '\n' && next != ')')
+                while (next != ' ' && next != '\r' && next != '\n' && next != ')')
                 {
                     sb.append(next);
                     request.consume();
@@ -234,6 +234,13 @@ class SearchCommand extends SelectedStateCommand implements UidEnabledCommand {
                     if (next == BRACKET)
                     {
                         // parameter was ended
+                        needContinue = false;
+                        continue;
+                    }
+                    
+                    // parameter ends at CR or LF
+                    if (next == '\r' || next == '\n')
+                    {
                         needContinue = false;
                         continue;
                     }
