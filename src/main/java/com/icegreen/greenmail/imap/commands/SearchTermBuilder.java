@@ -36,6 +36,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Builder for search terms.
@@ -299,7 +300,7 @@ public abstract class SearchTermBuilder {
             public SearchTerm build() {
                 String dateStr = getStringParameter(0);
                 try {
-                    Date date = new SimpleDateFormat("dd-MMM-yyyy").parse(dateStr);
+                    Date date = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH).parse(dateStr);
                     return isInternalDate ? new ReceivedDateTerm(comparison, date) : new SentDateTerm(comparison, date);
                 } catch (ParseException e) {
                     throw new IllegalArgumentException("Date cannot be parsed", e);
