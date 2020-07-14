@@ -18,8 +18,6 @@ branches:
   only:
     - master
     - /support\/.*/
-    - /feature\/.*/
-    - /fix\/.*/
 
 stages:
   - test
@@ -30,7 +28,7 @@ install: travis_retry mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B 
 jobs:
   include:
     - stage: test
-      name: "Compile code"
+      name: "Compile code & run unit tests"
       script: mvn clean install
     - stage: release
       name: "Push to Nexus"
