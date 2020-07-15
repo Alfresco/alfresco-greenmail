@@ -8,7 +8,7 @@
     </parent>
 
     <artifactId>alfresco-greenmail</artifactId>
-    <version>6.8-SNAPSHOT</version>
+    <version>6.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Alfresco greenmail implementation</name>
     <description>Alfresco's patched greenmail implementation</description>
