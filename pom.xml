@@ -33,7 +33,7 @@
 
     <properties>
         <licenseName>community</licenseName>
-        <additionalparam>-Xdoclint:none</additionalparam>
+        <maven.build.sourceVersion>8</maven.build.sourceVersion>
     </properties>
 
     <dependencies>
