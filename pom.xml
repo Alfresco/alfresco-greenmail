@@ -33,7 +33,7 @@
 
     <properties>
         <licenseName>community</licenseName>
-        <maven.build.sourceVersion>8</maven.build.sourceVersion>
+        <maven.build.sourceVersion>11</maven.build.sourceVersion>
     </properties>
 
     <dependencies>
