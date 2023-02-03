@@ -1,0 +1,20 @@
+name: Alfresco Greenmail CI
+
+on:
+  pull_request:
+    branches:
+      - master
+      - support/**
+  push:
+    branches:
+      - master
+      - support/**
+  workflow_dispatch:
+
+jobs:
+  build_and_release:
+      name: "Build and Release"
+      uses: Alfresco/alfresco-build-tools/.github/workflows/build-and-release-maven.yml@feature/ACS-4456_migrate-to-GHA
+      secrets: inherit
+      with:
+        release-branches: "^master$|^support/.+$"
