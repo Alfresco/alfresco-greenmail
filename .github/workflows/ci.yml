@@ -18,3 +18,4 @@ jobs:
       secrets: inherit
       with:
         release-branches: "^master$|^support/.+$"
+        build-args: "-Dmaven.javadoc.skip=true"
