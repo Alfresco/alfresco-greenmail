@@ -34,7 +34,7 @@ import com.icegreen.greenmail.mail.MailException;
 import com.icegreen.greenmail.pop3.Pop3Connection;
 import com.icegreen.greenmail.pop3.Pop3State;
 
-import javax.mail.MessagingException;
+import jakarta.mail.MessagingException;
 import java.util.Iterator;
 import java.util.List;
 

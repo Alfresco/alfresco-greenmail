@@ -35,7 +35,7 @@ import com.icegreen.greenmail.foedus.util.Workspace;
 import com.icegreen.greenmail.util.InternetPrintWriter;
 import com.icegreen.greenmail.util.GreenMailUtil;
 
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMessage;
 import java.io.*;
 import java.util.Iterator;
 import java.util.LinkedList;

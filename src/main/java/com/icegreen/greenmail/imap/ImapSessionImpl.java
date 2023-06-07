@@ -37,12 +37,11 @@ import com.icegreen.greenmail.store.FolderException;
 import com.icegreen.greenmail.store.MailFolder;
 import com.icegreen.greenmail.store.MessageFlags;
 
-import javax.mail.Flags;
-
-import org.safehaus.uuid.UUIDGenerator;
+import jakarta.mail.Flags;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @author Darrell DeBoer <darrell@apache.org>
@@ -72,7 +71,7 @@ public final class ImapSessionImpl implements ImapSession {
         this.handler = handler;
         this.clientHostName = clientHostName;
         this.clientAddress = clientAddress;
-        this.sessionId = UUIDGenerator.getInstance().generateRandomBasedUUID().toString();
+        this.sessionId = UUID.randomUUID().toString();
     }
 
     public ImapHostManager getHost() {

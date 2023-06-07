@@ -38,29 +38,34 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.build.sourceVersion>${java.version}</maven.build.sourceVersion>
+        <dependency.jakarta-ee-mail.version>2.0.1</dependency.jakarta-ee-mail.version>
+        <dependency.jakarta-ee-activation.version>2.0.1</dependency.jakarta-ee-activation.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>javax.mail</artifactId>
-            <version>1.5.5</version>
+            <groupId>jakarta.mail</groupId>
+            <artifactId>jakarta.mail-api</artifactId>
+            <version>${dependency.jakarta-ee-mail.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>${dependency.jakarta-ee-activation.version}</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>2.0.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.safehaus.jug</groupId>
-            <artifactId>jug</artifactId>
-            <version>2.0.0</version>
-            <classifier>asl</classifier>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

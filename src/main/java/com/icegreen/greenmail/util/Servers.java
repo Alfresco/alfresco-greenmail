@@ -39,7 +39,7 @@ import com.icegreen.greenmail.user.UserException;
 import com.icegreen.greenmail.imap.ImapServer;
 import com.icegreen.greenmail.store.SimpleStoredMessage;
 
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMessage;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;

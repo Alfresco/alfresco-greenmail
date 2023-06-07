@@ -31,9 +31,9 @@
  */
 package com.icegreen.greenmail.store;
 
-import javax.mail.Flags;
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.Flags;
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeMessage;
 import java.util.Date;
 
 /**

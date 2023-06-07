@@ -35,7 +35,7 @@ import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 
-import javax.mail.Flags;
+import jakarta.mail.Flags;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -39,8 +39,8 @@ import com.icegreen.greenmail.imap.ProtocolException;
 import com.icegreen.greenmail.store.FolderException;
 import com.icegreen.greenmail.store.MailFolder;
 
-import javax.mail.Flags;
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.Flags;
+import jakarta.mail.internet.MimeMessage;
 import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;

@@ -37,7 +37,7 @@ import com.icegreen.greenmail.store.FolderListener;
 import com.icegreen.greenmail.store.MessageFlags;
 import com.icegreen.greenmail.store.SimpleStoredMessage;
 
-import javax.mail.Flags;
+import jakarta.mail.Flags;
 
 
 /**

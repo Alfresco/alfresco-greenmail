@@ -43,9 +43,9 @@ import com.icegreen.greenmail.store.MailFolder;
 import com.icegreen.greenmail.store.SimpleStoredMessage;
 import com.icegreen.greenmail.foedus.util.MsgRangeFilter;
 
-import javax.mail.Flags;
-import javax.mail.internet.MimeMessage;
-import javax.mail.search.SearchTerm;
+import jakarta.mail.Flags;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.search.SearchTerm;
 import java.util.*;
 
 public class ImapSessionFolder implements MailFolder, FolderListener {

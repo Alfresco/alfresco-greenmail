@@ -33,7 +33,7 @@ package com.icegreen.greenmail.user;
 import com.icegreen.greenmail.mail.MovingMessage;
 import com.icegreen.greenmail.imap.ImapHostManager;
 
-import javax.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMessage;
 import java.io.Serializable;
 
 

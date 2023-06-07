@@ -38,13 +38,13 @@ import com.icegreen.greenmail.imap.ProtocolException;
 import com.icegreen.greenmail.store.FolderException;
 import com.icegreen.greenmail.store.MailFolder;
 
-import javax.mail.Flags;
-import javax.mail.Message;
-import javax.mail.search.AndTerm;
-import javax.mail.search.FlagTerm;
-import javax.mail.search.HeaderTerm;
-import javax.mail.search.MessageIDTerm;
-import javax.mail.search.SearchTerm;
+import jakarta.mail.Flags;
+import jakarta.mail.Message;
+import jakarta.mail.search.AndTerm;
+import jakarta.mail.search.FlagTerm;
+import jakarta.mail.search.HeaderTerm;
+import jakarta.mail.search.MessageIDTerm;
+import jakarta.mail.search.SearchTerm;
 
 /**
  * Handles processeing for the SEARCH imap command.

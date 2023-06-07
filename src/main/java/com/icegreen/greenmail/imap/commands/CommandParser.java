@@ -40,7 +40,7 @@ import com.icegreen.greenmail.imap.ImapRequestLineReader;
 import com.icegreen.greenmail.imap.ProtocolException;
 import com.icegreen.greenmail.store.MessageFlags;
 
-import javax.mail.Flags;
+import jakarta.mail.Flags;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

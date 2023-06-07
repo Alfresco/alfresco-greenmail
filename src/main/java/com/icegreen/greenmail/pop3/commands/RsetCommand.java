@@ -26,7 +26,7 @@
 package com.icegreen.greenmail.pop3.commands;
 
 import java.util.List;
-import javax.mail.Flags;
+import jakarta.mail.Flags;
 
 import com.icegreen.greenmail.pop3.Pop3Connection;
 import com.icegreen.greenmail.pop3.Pop3State;

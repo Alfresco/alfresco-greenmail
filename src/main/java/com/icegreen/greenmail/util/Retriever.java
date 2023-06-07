@@ -33,7 +33,7 @@ package com.icegreen.greenmail.util;
 import com.icegreen.greenmail.AbstractServer;
 import com.icegreen.greenmail.util.DummySSLSocketFactory;
 
-import javax.mail.*;
+import jakarta.mail.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;

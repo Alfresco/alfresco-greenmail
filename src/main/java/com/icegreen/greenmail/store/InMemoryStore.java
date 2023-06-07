@@ -35,11 +35,11 @@ import com.icegreen.greenmail.mail.MovingMessage;
 import com.icegreen.greenmail.foedus.util.MsgRangeFilter;
 import com.icegreen.greenmail.imap.ImapConstants;
 
-import javax.mail.Flags;
-import javax.mail.MessagingException;
-import javax.mail.Message;
-import javax.mail.internet.MimeMessage;
-import javax.mail.search.SearchTerm;
+import jakarta.mail.Flags;
+import jakarta.mail.MessagingException;
+import jakarta.mail.Message;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.search.SearchTerm;
 import java.util.*;
 
 /**

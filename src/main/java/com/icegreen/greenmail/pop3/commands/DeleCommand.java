@@ -39,7 +39,7 @@ import java.util.List;
 import com.icegreen.greenmail.store.MailFolder;
 import com.icegreen.greenmail.store.SimpleStoredMessage;
 
-import javax.mail.Flags;
+import jakarta.mail.Flags;
 
 
 public class DeleCommand
