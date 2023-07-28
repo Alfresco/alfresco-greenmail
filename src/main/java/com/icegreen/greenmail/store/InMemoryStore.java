@@ -2,7 +2,7 @@
  * #%L
  * Alfresco greenmail implementation
  * %%
- * Copyright (C) 2005 - 2016 Alfresco Software Limited
+ * Copyright (C) 2005 - 2023 Alfresco Software Limited
  * %%
  * This file is part of the Alfresco software. 
  * If the software was purchased under a paid Alfresco license, the terms of 
@@ -35,11 +35,11 @@ import com.icegreen.greenmail.mail.MovingMessage;
 import com.icegreen.greenmail.foedus.util.MsgRangeFilter;
 import com.icegreen.greenmail.imap.ImapConstants;
 
-import javax.mail.Flags;
-import javax.mail.MessagingException;
-import javax.mail.Message;
-import javax.mail.internet.MimeMessage;
-import javax.mail.search.SearchTerm;
+import jakarta.mail.Flags;
+import jakarta.mail.MessagingException;
+import jakarta.mail.Message;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.search.SearchTerm;
 import java.util.*;
 
 /**

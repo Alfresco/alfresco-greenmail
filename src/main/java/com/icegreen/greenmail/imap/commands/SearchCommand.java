@@ -2,7 +2,7 @@
  * #%L
  * Alfresco greenmail implementation
  * %%
- * Copyright (C) 2005 - 2016 Alfresco Software Limited
+ * Copyright (C) 2005 - 2023 Alfresco Software Limited
  * %%
  * This file is part of the Alfresco software. 
  * If the software was purchased under a paid Alfresco license, the terms of 
@@ -38,13 +38,13 @@ import com.icegreen.greenmail.imap.ProtocolException;
 import com.icegreen.greenmail.store.FolderException;
 import com.icegreen.greenmail.store.MailFolder;
 
-import javax.mail.Flags;
-import javax.mail.Message;
-import javax.mail.search.AndTerm;
-import javax.mail.search.FlagTerm;
-import javax.mail.search.HeaderTerm;
-import javax.mail.search.MessageIDTerm;
-import javax.mail.search.SearchTerm;
+import jakarta.mail.Flags;
+import jakarta.mail.Message;
+import jakarta.mail.search.AndTerm;
+import jakarta.mail.search.FlagTerm;
+import jakarta.mail.search.HeaderTerm;
+import jakarta.mail.search.MessageIDTerm;
+import jakarta.mail.search.SearchTerm;
 
 /**
  * Handles processeing for the SEARCH imap command.

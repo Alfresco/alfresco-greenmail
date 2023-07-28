@@ -2,7 +2,7 @@
  * #%L
  * Alfresco greenmail implementation
  * %%
- * Copyright (C) 2005 - 2016 Alfresco Software Limited
+ * Copyright (C) 2005 - 2023 Alfresco Software Limited
  * %%
  * This file is part of the Alfresco software. 
  * If the software was purchased under a paid Alfresco license, the terms of 
@@ -31,12 +31,12 @@
  */
 package com.icegreen.greenmail.store;
 
-import javax.mail.Flags;
+import jakarta.mail.Flags;
 
 
 /**
  * The set of flags associated with a message.
- * TODO - why not use javax.mail.Flags instead of having our own.
+ * TODO - why not use jakarta.mail.Flags instead of having our own.
  * <p/>
  * <p>Reference: RFC 2060 - para 2.3
  *

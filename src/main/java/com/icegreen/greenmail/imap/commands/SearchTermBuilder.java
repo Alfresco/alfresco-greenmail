@@ -2,7 +2,7 @@
  * #%L
  * Alfresco greenmail implementation
  * %%
- * Copyright (C) 2005 - 2020 Alfresco Software Limited
+ * Copyright (C) 2005 - 2023 Alfresco Software Limited
  * %%
  * This file is part of the Alfresco software. 
  * If the software was purchased under a paid Alfresco license, the terms of 
@@ -25,11 +25,11 @@
  */
 package com.icegreen.greenmail.imap.commands;
 
-import javax.mail.Flags;
-import javax.mail.Message;
-import javax.mail.internet.AddressException;
-import javax.mail.internet.InternetAddress;
-import javax.mail.search.*;
+import jakarta.mail.Flags;
+import jakarta.mail.Message;
+import jakarta.mail.internet.AddressException;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.search.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -278,7 +278,7 @@ public abstract class SearchTermBuilder {
 
     private static SearchTerm createFlagSearchTerm(String pFlagName, boolean pValue) {
         Flags.Flag flag = toFlag(pFlagName);
-        Flags flags = new javax.mail.Flags();
+        Flags flags = new jakarta.mail.Flags();
         if(null==flag) { // user flags
             flags.add(pFlagName);
         }
@@ -383,28 +383,28 @@ public abstract class SearchTermBuilder {
         };
     }
 
-    private static javax.mail.Flags.Flag toFlag(String pFlag) {
+    private static jakarta.mail.Flags.Flag toFlag(String pFlag) {
         if (pFlag == null || pFlag.trim().length() < 1) {
             throw new IllegalArgumentException("Can not convert empty string to mail flag");
         }
         pFlag = pFlag.trim().toUpperCase();
         if (pFlag.equals("ANSWERED")) {
-            return javax.mail.Flags.Flag.ANSWERED;
+            return jakarta.mail.Flags.Flag.ANSWERED;
         }
         if (pFlag.equals("DELETED")) {
-            return javax.mail.Flags.Flag.DELETED;
+            return jakarta.mail.Flags.Flag.DELETED;
         }
         if (pFlag.equals("DRAFT")) {
-            return javax.mail.Flags.Flag.DRAFT;
+            return jakarta.mail.Flags.Flag.DRAFT;
         }
         if (pFlag.equals("FLAGGED")) {
-            return javax.mail.Flags.Flag.FLAGGED;
+            return jakarta.mail.Flags.Flag.FLAGGED;
         }
         if (pFlag.equals("RECENT")) {
-            return javax.mail.Flags.Flag.RECENT;
+            return jakarta.mail.Flags.Flag.RECENT;
         }
         if (pFlag.equals("SEEN")) {
-            return javax.mail.Flags.Flag.SEEN;
+            return jakarta.mail.Flags.Flag.SEEN;
         }
         return null;
     }

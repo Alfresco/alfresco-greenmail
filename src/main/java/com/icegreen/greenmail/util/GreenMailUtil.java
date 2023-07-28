@@ -2,7 +2,7 @@
  * #%L
  * Alfresco greenmail implementation
  * %%
- * Copyright (C) 2005 - 2016 Alfresco Software Limited
+ * Copyright (C) 2005 - 2023 Alfresco Software Limited
  * %%
  * This file is part of the Alfresco software. 
  * If the software was purchased under a paid Alfresco license, the terms of 
@@ -42,25 +42,24 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.StringReader;
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
 
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.mail.Address;
-import javax.mail.BodyPart;
-import javax.mail.MessagingException;
-import javax.mail.Part;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
+import jakarta.activation.DataHandler;
+import jakarta.activation.DataSource;
+import jakarta.mail.Address;
+import jakarta.mail.BodyPart;
+import jakarta.mail.MessagingException;
+import jakarta.mail.Part;
+import jakarta.mail.Session;
+import jakarta.mail.Transport;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeBodyPart;
+import jakarta.mail.internet.MimeMessage;
+import jakarta.mail.internet.MimeMultipart;
 
 import com.icegreen.greenmail.imap.ImapConstants;
 import com.icegreen.greenmail.imap.commands.IdRange;
@@ -216,7 +215,7 @@ public class GreenMailUtil {
     }
 
     /**
-     * @return same as {@link #getWholeMessage(javax.mail.Part)} }
+     * @return same as {@link #getWholeMessage(jakarta.mail.Part)} }
      */
     public static String toString(Part msg) {
         return getWholeMessage(msg);
@@ -282,7 +281,7 @@ public class GreenMailUtil {
         try {
             Session session = getSession(setup);
 
-            Address[] tos = new javax.mail.Address[0];
+            Address[] tos = new jakarta.mail.Address[0];
             tos = new InternetAddress[]{new InternetAddress(to)};
             Address[] froms = new InternetAddress[]{new InternetAddress(from)};
             MimeMessage mimeMessage = new MimeMessage(session);
